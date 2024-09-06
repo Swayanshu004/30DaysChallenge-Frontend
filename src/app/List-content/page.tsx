@@ -12,9 +12,11 @@ const Home: React.FC = () => {
         
         <ul className="space-y-2 mb-6">
           {items.map((item, index) => (
-            <li key={index} className="bg-black-700 p-3 rounded-lg shadow-sm text-white text-lg flex items-center">
+            <li key={index} className="bg-black px-5 rounded-lg shadow-sm text-white text-lg flex items-center">
               {/* Dot Icon and item */}
-              <FaCircle className="mr-2 text-xs text-white" /> {/* Dot Icon added */}
+              {/* <FaCircle className="mr-2 text-xs text-white" />  */}
+              {/* Dot Icon added */}
+              {index+1}.
               {item}
             </li>
           ))}
@@ -24,7 +26,7 @@ const Home: React.FC = () => {
         <div className="flex justify-center">
           <Link href="/register" passHref>
             <button
-              className="text-white px-4 py-2 rounded-lg shadow hover:opacity-80 transition"
+              className="text-black font-semibold px-4 py-2 rounded-lg shadow hover:opacity-80 transition"
               style={{ backgroundColor: '#ff4000' }}
             >
               Register
