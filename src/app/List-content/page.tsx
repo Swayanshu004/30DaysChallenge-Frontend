@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { FaCircle } from "react-icons/fa"; // Importing the dot icon
 
 const Home: React.FC = () => {
   // Example list data
