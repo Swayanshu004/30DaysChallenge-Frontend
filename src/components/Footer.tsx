@@ -1,26 +1,34 @@
 "use client";
 import React from "react";
-const Footer= () =>{
-    return(
-        <footer className="bg-gray-800 text-orange-500  flex flex-col md:flex-row items-center justify-around rounded-t-full overflow-hidden">
-        
-        <div className="flex items-center justify-center mt-4">
-      <input 
-        type="email" 
-        placeholder="Enter your email" 
-        className=" flex items-center   px-4 py-2  sm:w-auto rounded-l-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
-      />
-      <button 
-        className="bg-orange-500 text-white px-4 py-2 rounded-r-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500">
-        Submit
-      </button>
-    </div>
-        <div className=" text-center py-2  text-orange-500">
-          &copy; a product by codingaashram community
-        </div>
-      </footer>
-      
-    )
-    }
-    export default  Footer;
-    
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
+const Footer = () => {
+  return (
+    <footer className="bg-gray-800 text-orange-500 flex flex-col items-center justify-center rounded-t-full overflow-hidden p-4">
+      <div className="flex items-center justify-center space-x-6 mb-4">
+        <a
+          href="https://github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-orange-500 hover:text-white transition-colors duration-300"
+        >
+          <FaGithub className="h-8 w-8" />
+        </a>
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-orange-500 hover:text-white transition-colors duration-300"
+        >
+          <FaLinkedin className="h-8 w-8" />
+        </a>
+      </div>
+
+      <div className="text-center py-2 text-orange-500">
+        &copy; a product by codingआश्रम community
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
