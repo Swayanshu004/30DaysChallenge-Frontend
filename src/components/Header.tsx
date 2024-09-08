@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 
 function Header() {
@@ -24,5 +25,7 @@ function Header() {
   );
 }
   
+
+
 
  export default Header;
