@@ -69,7 +69,7 @@ export function FocusCardsDemo() {
   //   console.log(cards[1].src)
   return(
     <div className="w-screen h-screen">
-        <FocusCards cards={cards} />
+        <FocusCards cards ={cards} />
 
     </div>
   ) ;
