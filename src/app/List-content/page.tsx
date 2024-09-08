@@ -1,3 +1,4 @@
+import { color } from "framer-motion";
 import Link from "next/link";
 
 const Home: React.FC = () => {
@@ -19,17 +20,18 @@ const Home: React.FC = () => {
     "Item 14",
     "Item 15",
   ];
+  
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-black-100">
-      <div className="bg-black p-6 rounded-lg shadow-lg w-2/4">
-        <h1 className="text-3xl font-bold mb-4 text-white">List of Items</h1>
+    <div className="h-screen flex flex-col items-center justify-center bg-black-100 py-9">
+      <div className="bg-gray-700 p-6 rounded-lg shadow-lg w-3/4">
+        <h1 className="text-3xl font-bold mb-4 "  style={{ color: "#ff4000" }}>List of Items</h1>
 
         <ul className="space-y-2 mb-6">
           {items.map((item, index) => (
             <li
               key={index}
-              className="bg-black px-5 rounded-lg shadow-sm text-white text-lg flex items-center"
+              className="bg-gray-700 px-5 rounded-lg  text-white text-lg flex items-center "
             >
               {/* Dot Icon and item */}
               {/* <FaCircle className="mr-2 text-xs text-white" />  */}
