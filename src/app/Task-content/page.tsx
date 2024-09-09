@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import ProgressBar from "@/components/ProgressBar";
 
 // Card Component
 export const Card = React.memo(
@@ -133,14 +134,8 @@ const TaskPage: React.FC = () => {
           <h1 className="text-3xl font-semibold text-orange-500">
             3. Datatypes in Javascript
           </h1>
-          <div className="flex items-center pt-4 md:pt-0">
-            <span className="text-sm text-white mr-2">1/30</span>
-            <div className="w-48 bg-neutral-700 rounded-full h-1.5">
-              <div
-                className="bg-green-500 h-1.5 rounded-full"
-                style={{ width: "10%" }}
-              ></div>
-            </div>
+          <div className="w-1/6">
+              <ProgressBar />
           </div>
         </div>
 
