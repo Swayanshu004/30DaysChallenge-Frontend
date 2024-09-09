@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-orange-500 flex flex-col items-center justify-center rounded-t-full overflow-hidden p-4">
+    <footer className="bg-gray-800 text-orange-500 flex flex-col md:flex-row items-center justify-center md:justify-between rounded-t-full overflow-hidden px-20 py-4">
       <div className="flex items-center justify-center space-x-6 mb-4">
         <a
           href="https://github.com"
@@ -24,8 +24,8 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="text-center py-2 text-orange-500">
-        &copy; a product by codingआश्रम community
+      <div className="text-center text-xs md:text-lg  py-2 md:py-0 text-orange-500">
+        &copy; a product by <span className="text-white font-semibold">codingआश्रम</span> community
       </div>
     </footer>
   );
