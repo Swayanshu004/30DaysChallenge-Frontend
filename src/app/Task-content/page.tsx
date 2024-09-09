@@ -126,16 +126,16 @@ const TaskPage: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white flex justify-center overflow-hidden">
-      <div className="w-full bg-gray-900 rounded-lg shadow-lg flex flex-col h-full">
+    <div className="min-h-screen bg-neutral-950 text-white flex justify-center overflow-hidden">
+      <div className="w-full bg-neutral-950 rounded-lg shadow-lg flex flex-col h-full">
         {/* Header Section */}
-        <div className="p-4 flex justify-between border-b border-gray-700">
+        <div className="p-4 flex flex-col md:flex-row  justify-between border-b bg-neutral-950">
           <h1 className="text-3xl font-semibold text-orange-500">
             3. Datatypes in Javascript
           </h1>
-          <div className="flex items-center">
+          <div className="flex items-center pt-4 md:pt-0">
             <span className="text-sm text-white mr-2">1/30</span>
-            <div className="w-48 bg-gray-700 rounded-full h-1.5">
+            <div className="w-48 bg-neutral-700 rounded-full h-1.5">
               <div
                 className="bg-green-500 h-1.5 rounded-full"
                 style={{ width: "10%" }}
@@ -145,7 +145,7 @@ const TaskPage: React.FC = () => {
         </div>
 
         {/* Main Content Layout */}
-        <div className="flex flex-1 overflow-hidden">
+        <div className="flex flex-row overflow-hidden">
           {/* Left Sidebar - Sticky Task Progress */}
           <div
             className="bg-gray-800 p-4 sticky top-4 flex flex-col items-center overflow-auto max-h-dvh"
@@ -171,7 +171,7 @@ const TaskPage: React.FC = () => {
                       : step.status === "not-completed"
                       ? "bg-gray-500 text-white"
                       : step.status === "current"
-                      ? "bg-yellow-500 text-black"
+                      ? "bg-orange-500 text-black"
                       : "bg-red-500 text-white"
                   }`}
                 >
